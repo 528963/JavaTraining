@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <script src="../static/layui/layui.all.js"></script>
+    <link rel="stylesheet" href="../static/css/login.css" type="text/css"/>
+</head>
+<body class="bottom">
+<div class="main">
+    <section id="contain">
+        <form class="layui-form" method="post" action="/login">
+            <h1>登录</h1>
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号</label>
+                <div class=" layui-input-block">
+                    <input type="text" name="username" placeholder="请输入账号" lay-verify="required|username" class="layui-input"/>
+                </div>
+
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码</label>
+                <div class=" layui-input-block">
+                    <input type="password" name="password" placeholder="请输入密码" lay-verify="required|password" class="layui-input"/>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <input type="submit" value="登录" class="layui-btn" id="commit"/>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>

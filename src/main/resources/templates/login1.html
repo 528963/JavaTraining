@@ -5,34 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>登录页面</title>
     <link rel="stylesheet" href="../static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../static/css/index.css" media="all">
 </head>
 <body>
     <header>
         <ul class="layui-nav layui-bg-blue" lay-bar="disabled" style="text-align: center;box-shadow: 0 0 18px rgba(0,0,0,0.2);">
-            <li class="layui-nav-item" style="width: 100px;"><a href="">首页</a></li>
-            <li class="layui-nav-item" style="width: 100px;"><a href="">职位</a></li>
-            <li class="layui-nav-item" style="width: 100px;"><a href="">公司</a></li>
-            <li class="layui-nav-item" style="width: 100px;">
-                <a href="javascript:;">解决方案</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">移动模块</a></dd>
-                    <dd><a href="">后台模版</a></dd>
-                    <dd><a href="">电商平台</a></dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item" style="width: 100px;"><a href="">社区</a></li>
-            <li class="layui-nav-item" style="margin-left: 40px ">
-                <a style="display: inline" href="">登录</a>
-                <div style="display: inline"> | </div>
-                <a style="display: inline" href="">注册</a>
+            <li class="layui-nav-item" style="width: 100px;margin-right: 40px"><a href="" style="font-size: 20px;">首页</a></li>
+            <li class="layui-nav-item" style="width: 100px;"><a href="" style="font-size: 20px;">职位</a></li>
+            <li class="layui-nav-item" style="width: 100px;margin-left: 40px"><a href="" style="font-size: 20px;">公司</a></li>
+<!--            <li class="layui-nav-item" style="width: 100px;">-->
+<!--                <a href="javascript:;" style="font-size: 20px">解决方案</a>-->
+<!--                <dl class="layui-nav-child">-->
+<!--                    <dd><a href="" style="font-size: 20px">移动模块</a></dd>-->
+<!--                    <dd><a href="" style="font-size: 20px">后台模版</a></dd>-->
+<!--                    <dd><a href="" style="font-size: 20px">电商平台</a></dd>-->
+<!--                </dl>-->
+<!--            </li>-->
+            <li class="layui-nav-item" style="margin-left: 140px ">
+                <a style="display: inline;font-size: 20px" href="" >登录</a>
+                <div style="display: inline;font-size: 20px"> | </div>
+                <a style="display: inline;font-size: 20px" href="">注册</a>
             </li>
         </ul>
     </header>
-    <div style="width: 300px;height: 3000px;color: #00FF00">
+    <div class="layui-row">
+        <div class="layui-col-md2" style="opacity: 0">2/12</div>
+        <div class="layui-col-md8" style="box-shadow: 0 0 18px rgba(0,0,0,0.2);height: 1000px">
+            <div class="layui-panel" style="background-color: #f6f6f6">
+                <div style="padding: 40px 30px;">
+                    <form class="layui-form layui-form-pane" action="">
+                        <fieldset class="layui-elem-field layui-field-title">
+                            <legend>搜索你想要的工作</legend>
+                        </fieldset>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label" style="background-color: #2D93CA;color: #ffffff">在这里输入</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="data" autocomplete="off" placeholder="请输入搜索内容" class="layui-input">
 
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-btn-container" style="text-align: center">
+                                <button class="layui-btn layui-btn-normal" style="width: 100px;height: 38px;background-color: #2D93CA;margin-top: 20px">搜  索</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div style="margin-top: 20px">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 40px;">
+                    <legend>来看看下面的岗位吧</legend>
+                </fieldset>
+                <ul style="margin-top: 30px;" class="item_con_list">
+                    <li class="layui-panel">
+                        <div class="list_item_top">
+                            <div class="position">产品需求分析师[深圳-南山区]</div>
+                            <div class="company">
+                                <div class="company_name">公司名称</div>
+                                <div class="industry">数据服务，企业服务/不需要融资/100人左右</div>
+                            </div>
+                        </div>
+                        <div class="list_item_bot">
+                            <div class="li_b_l">科技服务</div>
+                            <div class="li_b_r">科技金融</div>
+                        </div>
+                    </li>
+                    <li class="layui-panel">
+                        <div class="list_item_top">
+                            <div class="position">产品需求分析师[深圳-南山区]</div>
+                            <div class="company">
+                                <div class="company_name">公司名称</div>
+                                <div class="industry">数据服务，企业服务/不需要融资/100人左右</div>
+                            </div>
+                        </div>
+                        <div class="list_item_bot">
+                            <div class="li_b_l">科技服务</div>
+                            <div class="li_b_r">科技金融</div>
+                        </div>
+                    </li>
+                    <li class="layui-panel">
+                    <div class="list_item_top">
+                        <div class="position">产品需求分析师[深圳-南山区]</div>
+                        <div class="company">
+                            <div class="company_name">公司名称</div>
+                            <div class="industry">数据服务，企业服务/不需要融资/100人左右</div>
+                        </div>
+                    </div>
+                    <div class="list_item_bot">
+                        <div class="li_b_l">科技服务</div>
+                        <div class="li_b_r">科技金融</div>
+                    </div>
+                    </li>
+                    <li class="layui-panel">
+                        <div class="list_item_top">
+                            <div class="position">产品需求分析师[深圳-南山区]</div>
+                            <div class="company">
+                                <div class="company_name">公司名称</div>
+                                <div class="industry">数据服务，企业服务/不需要融资/100人左右</div>
+                            </div>
+                        </div>
+                        <div class="list_item_bot">
+                            <div class="li_b_l">科技服务</div>
+                            <div class="li_b_r">科技金融</div>
+                        </div>
+                    </li>
+                    <li class="layui-panel">
+                        <div class="list_item_top">
+                            <div class="position">产品需求分析师[深圳-南山区]</div>
+                            <div class="company">
+                                <div class="company_name">公司名称</div>
+                                <div class="industry">数据服务，企业服务/不需要融资/100人左右</div>
+                            </div>
+                        </div>
+                        <div class="list_item_bot">
+                            <div class="li_b_l">科技服务</div>
+                            <div class="li_b_r">科技金融</div>
+                        </div>
+                    </li>
+                    <li class="layui-panel">
+                        <div class="list_item_top">
+                            <div class="position">产品需求分析师[深圳-南山区]</div>
+                            <div class="company">
+                                <div class="company_name">公司名称</div>
+                                <div class="industry">数据服务，企业服务/不需要融资/100人左右</div>
+                            </div>
+                        </div>
+                        <div class="list_item_bot">
+                            <div class="li_b_l">科技服务</div>
+                            <div class="li_b_r">科技金融</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-col-md2" style="opacity: 0">2/12</div>
     </div>
 </body>
 <script src="../static/layui/layui.all.js"></script>
+<script>
+
+</script>
 <!--<script>-->
 <!--    const headerEl = document.querySelector("header");-->
 <!--    window.addEventListener("scroll",()=>{-->
