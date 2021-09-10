@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册您的账号</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css" media="all">
+</head>
+<body>
+    <ul class="layui-nav layui-bg-blue" lay-bar="disabled" style="text-align: center;box-shadow: 0 0 18px rgba(0,0,0,0.2);">
+        <li class="layui-nav-item" style="width: 100px;margin-right: 40px"><a href="" style="font-size: 18px;">首页</a></li>
+        <li class="layui-nav-item" style="width: 100px;"><a href="" style="font-size: 18px;">职位</a></li>
+        <li class="layui-nav-item" style="width: 100px;margin-left: 40px"><a href="" style="font-size: 18px;">公司</a></li>
+    </ul>
+    <div class="layui-row">
+        <div class="layui-col-md3" style="opacity: 0">2/12</div>
+        <div class="layui-col-md6" style="box-shadow: 0 0 18px rgba(0,0,0,0.2);margin-top: 50px">
+            <h1 style="text-align: center;margin-top: 30px">加入我们，无论您是求职者还是公司人员!</h1>
+            <div class="layui-panel-window" style="border: 1px solid #ededed;padding: 30px 30px;margin-top: 20px">
+                <form class="layui-form layui-form-pane" action="index">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">账号名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" autocomplete="off" placeholder="请输入账号名" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item" style="">
+                        <label class="layui-form-label">密码</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="password" autocomplete="off" placeholder="请输入密码" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">确认密码</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="password" autocomplete="off" placeholder="请再次输入密码" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item" pane="">
+                        <label class="layui-form-label">您的身份</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="type" value="求职人" title="求职者" checked="">
+                            <input type="radio" name="type" value="公司人" title="公司人员">
+                            <input type="radio" name="type" value="其他人" title="其他人员">
+                        </div>
+                    </div>
+                    <div class="layui-form-item" style="text-align: center">
+                        <button class="layui-btn" lay-submit="" lay-filter="demo2">注册好了！</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="layui-col-md3" style="opacity: 0">2/12</div>
+    </div>
+</body>
+<script src="../static/layui/layui.all.js"></script>
+<script>
+
+</script>
+</html>

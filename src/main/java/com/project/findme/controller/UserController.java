@@ -3,7 +3,6 @@ package com.project.findme.controller;
 
 import com.project.findme.entity.User;
 import com.project.findme.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +16,19 @@ public class UserController {
 
     private UserService userService;
 
-    @RequestMapping("/toUser")
+    @RequestMapping("/index")
     public String toUser(){
-        return "login1";
+        return "index";
+    }
+
+    @RequestMapping("/tologin")
+    public String tologin(){
+        return "login";
+    }
+
+    @RequestMapping("/signin")
+    public String signin(){
+        return "signin";
     }
 
     @RequestMapping("/login")
@@ -29,10 +38,10 @@ public class UserController {
         if(user != null){
             session.setAttribute("user1",user);
             User loginuser1 = (User) session.getAttribute("user1");
-            return "/background/index";
+            return "/index";
         }else{
             model.addAttribute("message","登录名与密码不符，请重新输入！");
-            return "/background/login";
+            return "/login";
         }
     }
 }

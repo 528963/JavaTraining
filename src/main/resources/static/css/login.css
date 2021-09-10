@@ -4,30 +4,28 @@
 }
 .bottom {
 	background-image: url(../images/bgc.jpg);
-	position: relative;
+	/*position: relative;*/
 	/*background-size: 100%;*/
-	object-fit: cover;
+	/*object-fit: cover;*/
 }
 .main {
-	width: 400px;
+	width: 420px;
 	height: 300px;
 	box-shadow: 0 2px 8px #9f9f9f;
 	background-color: rgba(249,249,249,0.6);
 	position: absolute;
-	left: 50%;
-	margin-left: -200px;
-	top: 50%;
-	margin-top: 200px;
 }
 h1 {
-	width: 400px;
+	width: 420px;
 	height: 50px;
-	text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+	text-shadow: 0 2px 4px rgba(59,59,59,0.4);
 	letter-spacing: 6px;
+	color: #3b3b3b;
 }
 label {
-	text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+	text-shadow: 0 2px 4px rgba(59,59,59,0.4);
 	letter-spacing: 3px;
+	color: #3b3b3b;
 }
 #contain {
 	text-align: center;
